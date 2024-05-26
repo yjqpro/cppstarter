@@ -12,6 +12,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
 add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 project({{ cookiecutter.project_slug }} VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 14)
